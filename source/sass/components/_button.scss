@@ -1,0 +1,68 @@
+.button,
+button,
+a.button,
+input[type="submit"] {
+  background: $white;
+  border: .1rem solid $light;
+  border-radius: .4rem;
+  color: $text;
+  font-size: 1.4rem;
+  letter-spacing: .1rem;
+  line-height: 1;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background .5s ease;
+  white-space: nowrap;
+  &:focus,
+  &:hover {
+    background-color: $light;
+    cursor: pointer;
+    outline: 0;
+    transition: background .5s ease;
+  }
+  &.is-extra-small {
+    padding: 2.5px 7.5px;
+  }
+  &.is-small {
+    padding: 5px 15px;
+  }
+  &.is-large {
+    padding: 20px 60px;
+  }
+  &.is-rounded {
+    border-radius: 50px;
+  }
+  &.is-block {
+    width: 100%;
+  }
+  @each $name, $color in $color-list {
+    &.is-#{$name} {
+      background: $color;
+      border: 1px solid transparent;
+      color: white;
+      transition: background .5s ease;
+      &:hover,
+      &:focus,
+      &:active {
+        background: darken($color, 5%);
+        transition: background .5s ease;
+      }
+      &.is-outlined {
+        background: transparent;
+        color: $color;
+        border: 1px solid $color;
+        &:hover,
+        &:focus,
+        &:active {
+          background: rgba($color, .1);
+        }
+      }
+    }
+  }
+  &.is-whiten,
+  &.is-light {
+    color: $text;
+  }
+}

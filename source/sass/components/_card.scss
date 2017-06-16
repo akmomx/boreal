@@ -1,0 +1,28 @@
+.card {
+  background-color: $white;
+  border: 1px solid $light;
+  border-radius: .6rem;
+  width: 100%;
+  @each $name, $color in $color-list {
+    &.is-#{$name} {
+      border-top: 1.5rem solid $color;
+    }
+  }
+  .card-image {
+    width: 100%;
+    max-width: 100%;
+    height: contain;
+  }
+  .card-content {
+    padding: 2rem;
+  }
+  .card-footer {
+    background-color: $light;
+    padding: 1rem 2rem;
+    border-bottom-right-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+    .button {
+      margin-bottom: 0rem;
+    }
+  }
+}

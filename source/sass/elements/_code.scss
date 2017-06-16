@@ -1,0 +1,20 @@
+// $code-margin: 1.2rem;
+// code {
+//   margin:$code-margin;
+//   background: $text;
+//   color: $white;
+//   border-radius: .4rem;
+//   font-size: 86%;
+//   padding: .2rem .5rem;
+//   white-space: nowrap;
+// }
+
+pre {
+  background: $text;
+  padding: 1rem 2rem;
+  border-left: 1rem solid $primary;
+  & > code {
+    border-radius: 0;
+    color: white;
+  }
+}

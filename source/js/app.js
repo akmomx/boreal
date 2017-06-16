@@ -1,0 +1,4 @@
+/*
+  Here is where you can write your custom
+  javascript application code.
+*/

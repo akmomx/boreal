@@ -1,0 +1,141 @@
+// Flexbox implementations out of the grid system
+/*
+  Only horizontal
+*/
+@each $jc in flex-end,flex-start,space-around,space-between,center {
+  .jc-#{$jc} {
+    display: flex;
+    justify-content: $jc;
+  }
+}
+/*
+  Only vertical
+*/
+@each $ai in flex-end,flex-start,center,strech,baseline {
+  .ai-#{$ai} {
+    display: flex;
+    align-items: $ai;
+  }
+}
+
+/*
+  Horizontal-Vertical convention
+*/
+@each $align-items in baseline,strech,flex-end,flex-start,center {
+  .sp-around-#{$align-items} {
+    display: flex;
+    justify-content: space-around;
+    align-items: $align-items;
+  }
+}
+
+@each $align-items in baseline,strech,flex-end,flex-start,center {
+  .sp-between-#{$align-items} {
+    display: flex;
+    justify-content: space-between;
+    align-items: $align-items;
+  }
+}
+
+@each $align-items in baseline,strech,flex-end,flex-start,center {
+  .center-#{$align-items} {
+    display: flex;
+    justify-content: center;
+    align-items: $align-items;
+  }
+}
+
+@each $align-items in baseline,strech,flex-end,flex-start,center {
+  .fl-end-#{$align-items} {
+    display: flex;
+    justify-content: flex-end;
+    align-items: $align-items;
+  }
+}
+
+@each $align-items in baseline,strech,flex-end,flex-start,center {
+  .fl-start-#{$align-items} {
+    display: flex;
+    justify-content: flex-start;
+    align-items: $align-items;
+  }
+}
+
+@each $op in column, column-reverse, row, row-reverse {
+  .fl-#{$op} {
+    flex-direction: $op;
+  }
+}
+
+@each $op in wrap, nowrap, wrap-reverse {
+  .fl-#{$op} {
+    flex-wrap: $op;
+  }
+}
+
+// Font weights
+@each $n, $w in (light:300,normal:400,bold:700) {
+  .txt-#{$n} {
+    font-weight: $w;
+  }
+}
+
+// Text alignments
+@each $a in (left,right,justify,center) {
+  .txt-#{$a} {
+    text-align: $a;
+  }
+}
+
+// Spacers
+@each $dir in left,right,top,bottom {
+  .spaced-#{$dir} {
+    margin-#{$dir}: 10px;
+  }
+}
+
+// Button spacers for FontAwesome.io
+@each $dir in left,right {
+  .fa-btn-#{$dir} {
+    margin-#{$dir}: 6px;
+  }
+}
+
+// Box corner rounders
+.bordered {
+  border-radius: .5rem;
+}
+
+.circled {
+  border-radius: 50%;
+}
+
+// Width and height inheritance
+// Inherintance
+.h-in {
+  height: inherit;
+  min-height: inherit;
+  max-height: inherit;
+}
+
+.w-in {
+  width: inherit;
+  min-width: inherit;
+  max-width: inherit;
+}
+
+// Testing features
+
+$test-margin: 1rem 0;
+
+.tst {
+  border: 1px solid $fire;
+}
+
+.btst {
+  margin: $test-margin;
+  background: $text;
+  padding: 20px 0;
+  border-radius: 3px;
+  width: 100%;
+}

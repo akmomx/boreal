@@ -1,0 +1,10 @@
+a {
+  color: $primary;
+  &:hover,
+  &:focus {
+    color: $teal;
+  }
+  &.plain {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Boreal | Akmo UI Kit</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="/dist/css/boreal.css">
+</head>
+<body>
+  <section class="section container">
+    <h1>Boreal UI</h1>
+    <h5>Akmo frontend components</h5>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h3>Buttons</h3>
+      <p class="txt-justify">
+        Los botones son un componente escencial al momento de crear
+        sitios web, en Akmo hemos concebido esta libreria para poder
+        manejar distintos conceptos y casos de uso.
+      </p>
+      <hr>
+      <h4>Botones por default</h4>
+      <p class="txt-justify">
+        Cuando utilizas una etiqueta semantica <code>button</code>,
+        automaticamente recibira los estilos por default para los
+        botones de nuestra libreria.
+      </p>
+      <p class="txt-justify">
+        La clase <code>.button</code> esta disponible para esos
+        casos donde quieres que una etiqueta <code>a</code>
+        reciba los estilos de un boton por default.
+      </p>
+      <h4>Ejemplos</h4>
+      <button>Botón semantico</button>
+      <a href="#!" class="button">A con clase .button</a>
+      <hr>
+      <h4>Tamaños</h4>
+      <p class="txt-justify">
+        Los botones pueden ser renderizados en distintos tamaños
+        dependiendo de la situación en la que se vayan a utilizar,
+        nuestra libreria cuenta con 4 tamaños.
+      </p>
+      <ul>
+        <li>Extra small</li>
+        <li>Small</li>
+        <li>Medium (default)</li>
+        <li>Large</li>
+      </ul>
+      <p class="txt-justify">
+        Para utilizar cada uno, la estructura de clases es la siguiente:
+        Donde, cada una de los tamaños sigue la nomenclatura <strong>"is-{tamaño}"</strong>
+      </p>
+      <pre><code>button class="is-large"</code></pre>
+      <pre><code>button class="is-small"</code></pre>
+      <pre><code>button class="is-extra-small"</code></pre>
+      <h4>Ejemplos</h4>
+      <button class="is-extra-small is-text">Extra small button</button>
+      <button class="is-small is-text">Small button</button>
+      <button class="is-text">Default button</button>
+      <button class="is-large is-text">Large button</button>
+      <hr>
+      <h4>Colores</h4>
+      <p>
+        Para poder utilizar los distintos colores disponibles, debes
+        utilizar la nomenclatura "is-{color}" en tu botón.
+      </p>
+      <h4>Ejemplos</h4>
+      <h5>Colores neutros</h5>
+      <div class="button-group">
+        <button class="is-dark">Dark button</button>
+        <button class="is-text">Text button</button>
+        <button class="is-light">Light button</button>
+        <button class="is-whiten">Whiten button</button>
+      </div>
+      <h5>Colores del tema</h5>
+      <div class="button-group">
+        <button class="button is-primary">Primary button</button>
+        <button class="button is-success">Success button</button>
+        <button class="button is-info">Info button</button>
+        <button class="button is-warning">Warning button</button>
+        <button class="button is-danger">Danger button</button>
+      </div>
+      <h5>Colores alternativos</h5>
+      <div class="button-group fl-wrap">
+        <button class="is-fire">Fire</button>
+        <button class="is-pink">Pink</button>
+        <button class="is-purple">Purple</button>
+        <button class="is-violet">Violet</button>
+        <button class="is-salmon">Salmon</button>
+        <button class="is-magenta">Magenta</button>
+        <button class="is-fucsia">Fucsia</button>
+        <button class="is-indigo">Indigo</button>
+        <button class="is-king">King</button>
+        <button class="is-slate">Slate</button>
+        <button class="is-cyan">Cyan</button>
+        <button class="is-water">Water</button>
+        <button class="is-teal">Teal</button>
+        <button class="is-lantern">Lantern</button>
+        <button class="is-caribean">Caribean</button>
+        <button class="is-tify">Tify</button>
+        <button class="is-radioactive">Radioactive</button>
+        <button class="is-orange">Orange</button>
+        <button class="is-tulip">Tulip</button>
+        <button class="is-gold">Gold</button>
+        <button class="is-toxic">Toxic</button>
+        <button class="is-burn">Burn</button>
+        <button class="is-brown">Brown</button>
+        <button class="is-cortex">Cortex</button>
+        <button class="is-grey">Grey</button>
+        <button class="is-smog">Smog</button>
+        <button class="is-steel">Steel</button>
+        <button class="is-concrete">Concrete</button>
+      </div>
+      <hr>
+      <h4>Botones de linea externa</h4>
+      <p class="txt-justify">
+        Para poder convertir tu botón en un botón de linea externa,
+        es necesario agregar la clase "is-outlined".
+      </p>
+      <h4>Ejemplos</h4>
+      <div class="button-group">
+        <button class="button is-outlined is-primary">Primary button</button>
+        <button class="button is-outlined is-success">Success button</button>
+        <button class="button is-outlined is-info">Info button</button>
+        <button class="button is-outlined is-warning">Warning button</button>
+        <button class="button is-outlined is-danger">Danger button</button>
+      </div>
+      <hr>
+      <h4>Botones redondeados</h4>
+      <p class="text-justify">
+        Para que tu botón tenga un estilo redondeado, es necesario
+        agregar la clase "is-rounded".
+      </p>
+      <h4>Ejemplos</h4>
+      <div class="button-group">
+        <button class="button is-rounded is-primary">Primary button</button>
+        <button class="button is-outlined is-rounded is-success">Success button</button>
+        <button class="button is-rounded is-info">Info button</button>
+        <button class="button is-outlined is-rounded is-warning">Warning button</button>
+        <button class="button is-rounded is-danger">Danger button</button>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h4>Cards</h4>
+      <p class="txt-justify">Pequeños componentes para mostrar información y elementos de forma visualmente ordenada</p>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="card">
+            <div class="card-content">
+              <h5>Card component</h5>
+              <p class="txt-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolores perspiciatis sunt, cumque eveniet reiciendis laboriosam fuga. Nam, ab, error.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="button">
+                Do something
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-2 center-center">
+          <h3>Simple card</h3>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-1-of-2 center-center">
+          <h3>Card with image</h3>
+        </div>
+        <div class="col-1-of-2">
+          <div class="card">
+            <img src="https://unsplash.it/1000" alt="Card image" class="card-image">
+            <div class="card-content">
+              <h5>Card component</h5>
+              <p class="txt-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="button">
+                Do something
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h3 class="txt-center">
+        Cards with color
+      </h3>
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="card is-primary">
+            <div class="card-content">
+              <h5>Primary card</h5>
+              <p class="txt-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="button is-primary">
+                Do something
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="card is-pink">
+            <div class="card-content">
+              <h5>Pink card</h5>
+              <p class="txt-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="button is-pink">
+                Do something
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="card is-radioactive">
+            <div class="card-content">
+              <h5>Radioactive card</h5>
+              <p class="txt-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="button is-radioactive">
+                Do something
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="card is-tify">
+            <div class="card-content">
+              <h5>Tify card</h5>
+              <p class="txt-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="card-footer">
+              <button class="button is-tify">
+                Do something
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

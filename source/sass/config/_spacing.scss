@@ -1,0 +1,28 @@
+$base-spacing: 1.0rem;
+
+.button,
+button,
+dd,
+dt,
+li {
+  margin-bottom: $base-spacing;
+}
+
+fieldset,
+input,
+select,
+textarea {
+  margin-bottom: $base-spacing * 1.5;
+}
+
+blockquote,
+dl,
+figure,
+form,
+ol,
+p,
+pre,
+table,
+ul {
+  margin-bottom: $base-spacing * 2.5;
+}
