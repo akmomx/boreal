@@ -126,16 +126,21 @@
 
 // Testing features
 
-$test-margin: 1rem 0;
+$test-padding: 1.5rem;
 
 .tst {
   border: 1px solid $fire;
 }
 
 .btst {
-  margin: $test-margin;
+  box-sizing: border-box;
+  padding: $test-padding;
   background: $text;
-  padding: 20px 0;
-  border-radius: 3px;
+  border-radius: .3rem;
   width: 100%;
+  @each $name, $color in $color-list {
+    &.is-#{$name} {
+      background: $color;
+    }
+  }
 }

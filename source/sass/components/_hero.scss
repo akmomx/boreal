@@ -1,0 +1,51 @@
+.hero {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 5vh 0;
+  @each $name, $color in $color-list {
+    &.is-#{$name} {
+      background: $color;
+      &.has-gradient {
+        background: $color;
+        background: linear-gradient(to right, $color, darken($color, 5%));
+      }
+    }
+    &.text-#{$name} {
+      * {
+        color: $color;
+      }
+    }
+  }
+  &.is-medium {
+    padding: 15vh 0;
+  }
+  &.is-large {
+    padding: 30vh 0;
+  }
+  &.has-shadow {
+    box-shadow: 0 3px 5px $light;
+  }
+  &.no-spaced {
+    margin-bottom: none;
+  }
+  .hero-content {
+    * {
+      margin: none;
+      padding: none;
+      line-height: 1;
+    }
+    padding: 20px;
+    .title {
+      margin: none;
+      padding: none;
+      line-height: 1;
+      font-weight: 300;
+    }
+    .subtitle {
+      margin: none;
+      padding: none;
+      line-height: 1;
+      font-weight: 300;
+    }
+  }
+}

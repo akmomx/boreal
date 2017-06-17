@@ -1,3 +1,22 @@
 .section {
   padding: 5vh 0;
+  &.is-small {
+    padding: 2vh 0;
+  }
+  &.is-medium {
+    padding: 10vh 0;
+  }
+  &.is-large {
+    padding: 15vh 0;
+  }
+  @each $name, $color in $color-list {
+    &.is-#{$name} {
+      background: $color;
+    }
+    &.text-#{$name} {
+      * {
+        color: $color;
+      }
+    }
+  }
 }
